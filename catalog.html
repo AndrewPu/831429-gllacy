@@ -33,10 +33,10 @@
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="aboutus.html">О компании</a></li>
       </ul>
-
+<!---Здесь я посчитал, что т.к. после нажатия ссылка не ведет в форму поиска, то можно обозначить ее как button -->
       <div class="search-form">
+        <a class="button-for-search-form" href="#"></a>
         <form class="search-form-main" action="https://echo.htmlacademy.ru" method="get">
-          <button class="for-search-form" aria-label="Поиск"></button>
           <div class="search-form-box">
             <label class="visually-hidden" for="action-search">Поиск</label>
             <input class="form-text" type="search" name="search" id="action-search" placeholder="Что ищем?">
@@ -45,7 +45,7 @@
       </div>
 
       <div class="login-link">
-        <button class="login-link-button" aria-label="Вход в личный кабинет">Вход</button>
+        <a class="login-link-button" href="#">Вход</a>
         <div class="login-link-box">
           <form class="login-form-main" action="https://echo.htmlacademy.ru" method="post">
             <div class="login-form-main-box">
@@ -65,10 +65,50 @@
         </div>
       </div>
 
-      <ul class="user-basket">
-        <li class="basket-full"><a href="basket.html">Корзина</a></li>
-         <!--Корзину представить через таблицу? --->
-      </ul>
+      <div class="basket-box">
+        <button class="basket-box-button" aria-label="Ваша корзина">2 товара</button>
+        <div class="basket-box-full">
+          <table class="shop-table">
+            <tr class="item-table">
+              <td class="item-table-delete">
+                <button class="delete-button" aria-label="Удалить"></button>
+              </td>
+              <td class="item-table-png">
+                <p class="catalog-item-image">
+                  <img src="img/orangeIce.png" width="100px" height="100px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </p>
+              </td>
+              <td class="item-table-name">
+                Пломбир с апельсиновым джемом
+              </td>
+              <td class="item-table-name-weight">1,5 кг х</td>
+              <td class="item-table-name-price">200 руб.</td>
+              <td class="item-table-name-full">300 руб.</td>
+            </tr>
+            <tr class="table-item-second">
+              <td class="item-table-delete">
+                <button class="delete-button" aria-label="Удалить"></button>
+              </td>
+              <td class="item-table-png">
+                <p class="catalog-item-image">
+                  <img src="img/CreamStrawberry.png" width="100px" height="100px" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                </p>
+              </td>
+              <td class="item-table-name">
+                Клубничный пломбир с присыпкой
+                из белого шоколада
+              </td>
+              <td class="item-table-name-weight">1,5 кг х</td>
+              <td class="item-table-name-price">300 руб</td>
+              <td class="item-table-name-full">450 руб</td>
+            </tr>
+          </table>
+          <p class="total-price">
+            Итого: 750 руб.
+          </p>
+          <a class="basket-button" href="#">Оформить заказ</a>
+        </div>
+      </div>
     </nav>
     <section class="contacts">
       <p class="working_hours">
@@ -114,6 +154,7 @@
             <label for="price-filter-range">Цена: 100 руб. – 500 руб.</label> 
             <input type="range" id="price-filter-range" name="price-filter-range" min="100" max="500" step="1">
           </div>
+          <!------ Почему стоит использовать input type="text" 100-500? Если так делать, то нужно каждый input обренуть в p? Аналогично делать с другими (Жирность, Сортировка) ------> 
 
           <fieldset class="filter-fat">
             <label for="filter-fat-list">Жирность</label> 
