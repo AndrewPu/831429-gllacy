@@ -10,12 +10,13 @@ body {
 
 a {
   text-decoration: none;
-}
 
+}
+/* Не могу понять, почему не подключает background-image с мороженым. */
 .site-wrapper {
   min-width: 940px;
+  background-image: url("img/Back1Ice.png");
   background-color: #849d8f;
-  background-image: url("img/Back1.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -29,11 +30,18 @@ a {
 }
 
 .site-wrapper::before {
-  background-image: url("img/Back2.jpg");
+  background-image: url("img/Back2Ice.png");
 }
 
 .site-wrapper::after {
   background-image: url("img/Back3.jpg");
+}
+
+.site-container {
+  position: relative;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container {
@@ -43,8 +51,12 @@ a {
 }
 
 .catalog-wrapper {
+  min-width: 940px;
   background-color: #849d8f;
   background-repeat: repeat-x;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+  min-height: 1200px;
 }
 
 .page-title {
@@ -390,7 +402,7 @@ background-size: 1px 1px;
 
 .log-in {
   display: inline-block;
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
   padding: 7px 16px 9px 44px;
   font-size: 14px;
   font-weight: 500;
@@ -410,11 +422,10 @@ background-size: 1px 1px;
   position: absolute;
   top: 6px;
   left: 16px;
-  width: 21px;
-  height: 15px;
+  width: 20px;
+  height: 19px;
   background-image: url("../img/entrance.png");
   background-repeat: no-repeat;
-  background-size: 20px 19px;
 }
 
 .log-in:hover::before{
@@ -508,6 +519,23 @@ background-size: 1px 1px;
   font-weight: 500;
   line-height: 16px;
   border-radius: 25px;
+}
+
+.basket-empty:hover{
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.basket-empty:hover::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 20px;
 }
 
 .basket:hover .ground {
@@ -644,12 +672,13 @@ background-size: 1px 1px;
 .slider-radio-3:checked ~ .site-wrapper .slider-label-3 {
   background-color: #ffffff;
 }
-/* 
-  width: 560px;
-  height: 229px;
-  border-radius: 20px;
-  
-  Вариант ниже? */
+
+.offer-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .special-offer {
   position: relative;
   box-sizing: border-box;
@@ -657,6 +686,22 @@ background-size: 1px 1px;
   margin-bottom: 26px;
   padding: 16px 19px 52px;
   border-radius: 15px;
+}
+
+.offer-head {
+  margin: 0 0 15px 0;
+  padding: 0;
+
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.offer-text {
+  margin: 0;
+  padding: 0px 0 45px 0;
+
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .raspberries {
@@ -671,25 +716,12 @@ background-size: 1px 1px;
   background-repeat: no-repeat;
 }
 
-.offer-head,
-.offer-text {
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-}
-
-.offer-head {
-  font-size: 35px;
-  line-height: 41px;
-}
-
-.offer-text {
-  font-size: 18px;
-  line-height: 22px;
-}
-
 .for-special-offer {
   position: absolute;
-  padding: 10px 20px 10px;
+  right: 21px;
+  bottom: 23px;
+
+  padding: 10px 22px 12px;
 }
 
 .icecream-catalog {
@@ -1212,7 +1244,7 @@ border-radius: 15px;
 
 .breadcrumbs-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: baseline;
 }
 
 .breadcrumbs {
@@ -1243,7 +1275,7 @@ border-radius: 15px;
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
-  border: none;
+  border-bottom: none;
 }
 
 .breadcrumbs li:not(:last-child)::after {
@@ -1329,7 +1361,8 @@ border-radius: 15px;
 
 .item-table-name-weight {
   box-sizing: border-box;
-  width: 123px;
+  width: 61px;
+  text-align: right;
 }
 
 .item-table-name-full {
@@ -1338,6 +1371,8 @@ border-radius: 15px;
 }
 
 .item-table-name-price {
+  box-sizing: border-box;
+  width: 61px;
   color: #999999;
 }
 
@@ -1423,7 +1458,6 @@ border-radius: 15px;
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
-  background-image: url("../img/select-arrow.svg");
   background-position: 168px 13px;
   background-repeat: no-repeat;
   background-size: 11px 10px;
@@ -1444,6 +1478,25 @@ border-radius: 15px;
   text-overflow: "";
   appearance: none;
 }
+
+.filter-sorting:hover {
+  height: 36px;
+  width: 193px;
+  padding: 6px 25px 8px 15px;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #050505;
+  background-position: 168px 13px;
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  border: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  appearance: none;
+}
+
 
 .sort-filter select::-ms-expand {
   display: none;
@@ -1507,7 +1560,7 @@ border-radius: 15px;
 }
 
 .filters-button:active {
-  padding: 9px 28px;
+  padding: 6px 15px 8px;
   background-color: rgb(237, 237, 237);
   border: none;
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.64);
