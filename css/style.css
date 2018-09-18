@@ -45,7 +45,7 @@ a {
 }
 
 .container {
-  width: 900px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -555,7 +555,7 @@ background-size: 1px 1px;
 .contacts-header {
   display: flex;
   align-self: flex-end;
-  margin: 0 0 2px;
+  margin: -28px 0 0;
   padding: 0;
   line-height: 16px;
 }
@@ -1243,6 +1243,9 @@ border-radius: 15px;
 .breadcrumbs-container {
   display: flex;
   justify-content: baseline;
+  margin: -37px 0 2px;
+  padding: 0;
+  line-height: 16px;
 }
 
 .breadcrumbs {
