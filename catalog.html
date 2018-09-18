@@ -166,7 +166,7 @@
       <li class="breadcrumbs-current">Сливочное</li>
     </ul>
   </div>
-  
+
   <h1 class="page-title">Сливочное мороженое</h1>
 
   <section class="filters">
@@ -191,21 +191,25 @@
       </fieldset>
 
       <fieldset class="price-filter">
-        <legend>Цена:</legend>
+        <legend class="visually-hidden">Цена:</legend>
+        <div class="range-text">
+          <span>Цена:</span>
+          <label class="min-price">
+          <input class="filters-form-price-minimum" type="text" name="price-minimum" value="100">
+          руб.
+          </label>
+          
+          <label class="max-price">
+          <input class="filters-form-price-max" type="text" name="price-max" value="500">
+          руб.
+          </label>
+        </div>
           <div class="filter-style filter-range">
-            <label for="price-filter-range">
-            <input type="range" id="price-filter-range" name="price-filter-range" min="100" max="500" step="1">
-            </label>
-
-            <label class="filters-form-price-text">
-            <input class="filters-form-price-minimum" type="text" name="price-minimum" value="100">
-            руб. –
-            </label>
-            
-            <label class="filters-form-price-text">
-            <input class="filters-form-price-max" type="text" name="price-max" value="500">
-            руб.
-            </label>
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
           </div>
       </fieldset>
 
