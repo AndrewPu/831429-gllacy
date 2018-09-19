@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -172,7 +173,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 0px;
-  padding: 10px 17px 0;
+  padding: 10px 0 0 17px;
 }
 
 .top-container {
@@ -185,6 +186,10 @@ input[type="radio"].visually-hidden {
   width: 154px;
   height: 64px;
   margin: 0 9px 0 0;
+}
+
+.main-header-logo-box {
+  margin: 0 0 0 0;
 }
 /*
 .navigation-container {
@@ -385,6 +390,7 @@ background-size: 1px 1px;
 
 .search-form input {
   flex-grow: 1;
+  padding: 10px 15px;
 }
 
 .search:hover .ground {
@@ -559,7 +565,7 @@ background-size: 1px 1px;
   display: flex;
   align-self: flex-end;
   position: relative;
-  top: -35px;
+  top: 0px;
   left: 0px;
   margin: 0 0 0;
   padding: 0;
@@ -584,6 +590,24 @@ background-size: 1px 1px;
 .telephone {
   font-size: 22px;
   line-height: 24px;
+}
+
+.telephone-link {
+  color:#ffffff;
+}
+
+.telephone-info {
+  color:#323232;
+}
+
+.link-htmlacademy {
+  color:#ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.link-htmlacademy:hover {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.4);
 }
 
 .container {
@@ -616,6 +640,10 @@ background-size: 1px 1px;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slider-list {
@@ -742,7 +770,7 @@ background-size: 1px 1px;
 
 .catalog-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -808,10 +836,8 @@ background-size: 1px 1px;
 .icecream-text-link:hover,
 .icecream-text-link:focus,
 .icecream-text-link:active {
-  background-image: linear-gradient(to bottom, rgba(255, 188, 158, 0.3) 100%, transparent 100%);
-  background-position: 0 18px;
-  background-repeat: repeat-x;
-  background-size: 1px 1px;
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(249, 173, 162, 0.4);
 }
 
 .catalog-item-image {
@@ -1089,7 +1115,6 @@ border-radius: 15px;
 
 .contact-description,
 .contact-info {
-  margin: 0 0 26px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1104,7 +1129,15 @@ border-radius: 15px;
 }
 
 .contact-description {
-  margin: 0 0 17px;
+  margin: 0 0 13px;
+}
+
+.contact-info-order {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #323232;
+  margin: 13px 0 0;
 }
 
 .for-feedback {
@@ -1115,7 +1148,7 @@ border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 18px 28px 24px;
+  padding: 18px 0px 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1147,7 +1180,8 @@ border-radius: 15px;
 }
 
 .social-button:active {
-  border-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.5;
+  border-color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 2px 1px 0px rgb(136, 136, 136);
 }
 
@@ -1157,7 +1191,6 @@ border-radius: 15px;
   line-height: 18px;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .add-info:hover,
@@ -1212,20 +1245,14 @@ border-radius: 15px;
   line-height: 16px;
   vertical-align: top;
   color: #ffffff;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 100%, transparent 100%);
-  background-position: 0 15px;
-  background-repeat: repeat-x;
-  background-size: 1px 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-navigation-link:hover,
 .footer-navigation-link:focus,
 .footer-navigation-link:active {
   color: #ffbc9e;
-  background-image: linear-gradient(to bottom, rgba(255, 188, 158, 0.4) 100%, transparent 100%);
-  background-position: 0 16px;
-  background-repeat: repeat-x;
-  background-size: 1px 1px;
+  border-bottom: 1px solid rgba(249, 173, 162, 0.4);
 }
 
 .footer-bold {
@@ -1798,7 +1825,7 @@ margin-bottom: 15px;
  .pagination-list {
   position: relative;
   top: -20px;
-  left: 960px;
+  left: 985px;
   display: flex;
   justify-content: space-between;
   align-items: center;
