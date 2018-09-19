@@ -925,7 +925,7 @@ background-size: 1px 1px;
 .description-icecream::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 0;
   width: 49px;
   height: 49px;
@@ -937,7 +937,7 @@ background-size: 1px 1px;
 .description-cow::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 0;
   width: 49px;
   height: 49px;
@@ -949,7 +949,7 @@ background-size: 1px 1px;
 .description-leaf::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 0;
   width: 49px;
   height: 49px;
@@ -961,7 +961,7 @@ background-size: 1px 1px;
 .description-temperature::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 0;
   width: 49px;
   height: 49px;
