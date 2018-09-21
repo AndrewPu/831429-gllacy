@@ -456,8 +456,8 @@ background-size: 1px 1px;
 
 .log-in-form {
   position: absolute;
-  top: 14px;
-  right: 10px;
+  top: 7px; /*14*/
+  right: 6px; /*9*/
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -465,7 +465,7 @@ background-size: 1px 1px;
   flex-wrap: wrap;
   box-sizing: border-box;
   width: 277px;
-  padding: 20px 18px;
+  padding: 19px 18px 21px 18px;
   background-color: #f8f7f4;
   border-radius: 6px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -473,12 +473,13 @@ background-size: 1px 1px;
 
 .log-in-form input {
   flex-grow: 1;
-  margin-bottom: 20px;
-  padding: 10px 15px;
+  margin-bottom: 21px;
+  padding: 13px 15px;
   border-radius: 6px;
   border-width: 2px;
   border: 0.5px solid #c7c6c5;
 }
+
 
 .log-in-form input:hover {
   padding: 9px 14px;
@@ -859,7 +860,7 @@ background-size: 1px 1px;
   position: relative;
   z-index: 3;
   order: -1;
-  margin: 0 0 13px;
+  margin: 16px 0 0 0;
 }
 
 .hit-item::before {
@@ -1434,6 +1435,7 @@ border-radius: 15px;
   z-index: 10;
   box-sizing: border-box;
   width: 540px;
+  height: 244px;
   padding: 0px 15px 40px;
   font-size: 13px;
   font-weight: 400;
@@ -1449,7 +1451,7 @@ border-radius: 15px;
 }
 
 .shop-table {
-  border-spacing: 0 17px;
+  border-spacing: 0 0px;
 }
 
 .shop-table td {
@@ -1457,7 +1459,7 @@ border-radius: 15px;
 }
 
 .shop-table td:not(:nth-child(2)) {
-  padding-top: 9px;
+  padding-top: 30px;
   vertical-align: baseline;
 }
 
@@ -1522,8 +1524,8 @@ border-radius: 15px;
 
 .total {
   position: relative;
-  bottom: 0px;
-  left: 400px;
+  bottom: -30px;
+  left: 402px;
 }
 
 .total::before {
@@ -1538,7 +1540,7 @@ border-radius: 15px;
 
 .basket-button {
   position: relative;
-  bottom: -15px;
+  bottom: -46px;
   left: 340px;
   padding: 9px 15px 12px;
 }
@@ -1586,13 +1588,13 @@ border-radius: 15px;
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
+  background-image: url("../img/icon-down-dir-white.png");
   background-position: 168px 13px;
   background-repeat: no-repeat;
   background-size: 11px 10px;
   border: none;
   text-indent: 0.01px;
   text-overflow: "";
-  appearance: none;
 }
 
 .sort-filter:hover {
@@ -1615,6 +1617,7 @@ border-radius: 15px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  background-image: url("../img/icon-down-dir-black.png");
   color: #050505;
   background-position: 168px 13px;
   background-repeat: no-repeat;
@@ -1626,9 +1629,12 @@ border-radius: 15px;
 }
 
 
-.sort-filter select::-ms-expand {
-  display: none;
+.sort-filter select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
 
 .sort-filter option {
   padding: 0;
@@ -2129,6 +2135,7 @@ margin: 0;
   margin-bottom: 5px;
   padding-bottom: 45px;
   padding-top: 18px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .name-feedback:hover,
@@ -2161,4 +2168,3 @@ margin: 0;
   line-height: 24px;
   color:#999999;
 }
-
