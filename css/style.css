@@ -48,7 +48,7 @@ a {
 }
 
 .container {
-  min-width: 1200px;
+  min-width: 1146px;
   margin: 0 auto;
   padding: 0 0px;
 }
@@ -183,14 +183,6 @@ input[type="radio"].visually-hidden {
 .main-header-logo-box {
   margin: 0 0 0 0;
 }
-/*
-.navigation-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-grow: 1;
-  padding: 14px 0 0;
-}*/
 
 .main-navigation {
   padding: 0;
@@ -480,13 +472,12 @@ background-size: 1px 1px;
   border: 0.5px solid #c7c6c5;
 }
 
-
 .log-in-form input:hover {
-  padding: 9px 14px;
+  padding: 13px 15px;
 }
 
 .log-in-form input:focus {
-  padding: 9px 14px;
+  padding: 13px 15px;
 }
 
 .login-link-box-forget {
@@ -720,7 +711,7 @@ background-size: 1px 1px;
 .offer-box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 0px;
 }
 
 .special-offer {
@@ -783,7 +774,7 @@ background-size: 1px 1px;
 
 .catalog-inner{
   width: 1146px;
-  margin: 0 0 38px;
+  margin: 0 0 0px;
 }
 
 .catalog-list {
@@ -804,7 +795,7 @@ background-size: 1px 1px;
   align-items: center;
   box-sizing: border-box;
   width: 267px;
-  margin-bottom: 38px;
+  margin-bottom: 23px;
   margin-right: 0px;
   margin-left: 1px;
 }
@@ -816,7 +807,7 @@ background-size: 1px 1px;
 .catalog:hover::before {
   content: "";
   position: absolute;
-  top: -6px;
+  top: 10px;
   left: -13px;
   z-index: 2;
   width: 293px;
@@ -860,7 +851,7 @@ background-size: 1px 1px;
   position: relative;
   z-index: 3;
   order: -1;
-  margin: 16px 0 0 0;
+  margin: 16px 0 13px 0;
 }
 
 .hit-item::before {
@@ -918,7 +909,7 @@ background-size: 1px 1px;
 
 .catalog:hover .for-icecream {
   position: absolute;
-  top: 334px;
+  top: 350px;
   left: 33px;
   z-index: 3;
   display: inline-block;
@@ -1129,20 +1120,17 @@ border-radius: 15px;
 
 .contacts {
   position: relative;
-  height: 428px;
+  height: 430px;
   margin: 0 -27px 0;
   background-color: #ece5c8;
   overflow: hidden;
-}
-
-.map-input img {
-  margin-top: -1px;
+  margin-bottom: -1px;
 }
 
 .contact-box {
-  position: absolute;
-  top: 62px;
-  left: 871px;
+  position: relative;
+  top: -372px;
+  left: 870px;
   box-sizing: border-box;
   width: 302px;
   padding: 31px 21px 31px 26px;
@@ -1180,7 +1168,7 @@ border-radius: 15px;
 }
 
 .contact-description {
-  margin: 0 0 0px;
+  margin: 0 100px 0 0;
 }
 
 .contact-description-time {
@@ -1207,7 +1195,7 @@ border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 36px 0px 24px;
+  padding: 35px 0px 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1323,7 +1311,7 @@ border-radius: 15px;
 }
 
 .footer-copyright-text {
-  padding: 0 2px 0 0;
+  padding: 0 4px 0 0;
   margin: 0;
 }
 
@@ -1337,25 +1325,7 @@ border-radius: 15px;
   padding: 0;
   list-style: none;
 }
-/*
-.footer-logo {
-  color: #ffffff;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 100%, transparent 100%);
-  background-position: 0 15px;
-  background-repeat: repeat-x;
-  background-size: 1px 1px;
-}
 
-.footer-logo:hover,
-.footer-logo:focus,
-.footer-logo:active {
-  color: rgb(255, 188, 158);
-  background-image: linear-gradient(to bottom, rgba(255, 188, 158, 0.4) 100%, transparent 100%);
-  background-position: 0 15px;
-  background-repeat: repeat-x;
-  background-size: 1px 1px;
-}
-*/ 
 .breadcrumbs-container {
   display: flex;
   justify-content: baseline;
@@ -1363,7 +1333,7 @@ border-radius: 15px;
   padding: 0;
   line-height: 16px;
 }
-/*было -37 */
+
 .breadcrumbs {
   display: flex;
   align-self: flex-start;
@@ -1447,7 +1417,7 @@ border-radius: 15px;
 }
 
 .basket-width {
-  width: 120px;
+  width: 119px;
 }
 
 .shop-table {
@@ -1459,7 +1429,7 @@ border-radius: 15px;
 }
 
 .shop-table td:not(:nth-child(2)) {
-  padding-top: 30px;
+  padding-top: 16px;
   vertical-align: baseline;
 }
 
@@ -1474,7 +1444,7 @@ border-radius: 15px;
 }
 
 .item-table-png img {
-  border-radius: 50%;
+  border-radius: 0%;
 }
 
 .item-table-name {
@@ -1524,7 +1494,7 @@ border-radius: 15px;
 
 .total {
   position: relative;
-  bottom: -30px;
+  bottom: -12px;
   left: 402px;
 }
 
@@ -1540,13 +1510,13 @@ border-radius: 15px;
 
 .basket-button {
   position: relative;
-  bottom: -46px;
+  bottom: -26px;
   left: 340px;
   padding: 9px 15px 12px;
 }
 
 .filters {
-  margin-bottom: 25px;
+  margin-bottom: 7px;
 }
 
 .filters-form {
@@ -1652,8 +1622,6 @@ border-radius: 15px;
   padding: 0;
   border: none;
 }
-/*-----------------------------------*/
-
 
 .filter-range {
   padding: 17px 21px;
@@ -1668,19 +1636,6 @@ border-radius: 15px;
   font-weight: 500;
   line-height: 16px;
 }
-
-/*{
-  position: relative;
-  display: inline-block; /* в линию цена + фильтр*/ /*
-  height: 36px;
-  margin-bottom: 20px;
-  
-  font-size: 0;
-
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-}
-*/
 
 .range-text label {
   display: inline-block;
@@ -1711,8 +1666,6 @@ border-radius: 15px;
 
 .filter-range   {
 position: relative;
-/*display: inline-block;  в линию цена + фильтр*/
-
 margin-bottom: 15px;
 }
 
@@ -1761,12 +1714,6 @@ margin-bottom: 15px;
   left: 60%;
 }
 
-/*-----------------------
-
-.filter-fat {
-  padding: 9px 20px 8px 12px;
-}
-------------*/
 .filter-filler {
   padding-left: 15px;
   padding-right: 19px;
@@ -1905,22 +1852,16 @@ margin-bottom: 15px;
   outline: 1px dotted black;
 }
 
-/*pagination-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 29px;
-}*/
-
  .pagination-list {
   position: relative;
-  top: 42px;
+  top: 55px;
   left: 956px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   width: 190px;
-  margin: 0 0 70px 0;
+  margin: 0 0 85px 0;
   padding: 0;
   line-height: 18px;
   list-style: none;
@@ -2141,14 +2082,14 @@ margin: 0;
 .name-feedback:hover,
 .email-feedback:hover,
 .textarea-feedback:hover {
-  border: 0.5px solid #c7c6c5;
+  border-width: 2px;
 }
 
 .name-feedback input,
 .email-feedback input,
 .textarea-feedback input {
   margin-bottom: 20px;
-  padding: 9px 14px;
+  padding: 12px 16px;
   border-radius: 6px;
   border-width: 2px;
   border: 0.5px solid #c7c6c5;
@@ -2157,7 +2098,7 @@ margin: 0;
 .name-feedback :focus,
 .email-feedback :focus,
 .textarea-feedback :focus {
-  padding: 9px 14px;
+  padding: 12px 16px;
   border: 2px solid #8fbdec;
   outline: none;
 }
@@ -2171,4 +2112,11 @@ margin: 0;
 
 .iframe {
   border: none;
+  background-image: url("../img/map.jpg");
+  min-width: 1200px;
+  min-height: 430px;
+  background-color: #849d8f;
+  background-repeat: no-repeat;
+  background-position: top center;
+  
 }
